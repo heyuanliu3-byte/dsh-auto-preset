@@ -21,7 +21,19 @@
     "permission",
     "auto-review"
   ],
+  "author": "heyuanliu3-byte",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyuanliu3-byte/dsh-auto-preset.git"
+  },
+  "homepage": "https://github.com/heyuanliu3-byte/dsh-auto-preset#readme",
+  "bugs": {
+    "url": "https://github.com/heyuanliu3-byte/dsh-auto-preset/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

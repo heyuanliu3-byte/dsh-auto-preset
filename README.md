@@ -29,12 +29,22 @@ State is kept in `state.json` next to the plugin (persists across DSH restarts).
 
 ## Install
 
+### From source
+
 ```bash
-# from a DSH checkout / any shell with `dsh` on PATH
+git clone https://github.com/heyuanliu3-byte/dsh-auto-preset.git
 dsh plugin --profile web add link:/absolute/path/to/dsh-auto-preset
 ```
 
 Then add `"dsh-auto-preset"` to the profile's bundle list (`package.json` → `dsh.profile.bundles`) and restart the DSH web server.
+
+### From npm
+
+Once the package is published to npm:
+
+```bash
+dsh plugin --profile web add dsh-auto-preset
+```
 
 The plugin must be loaded **after** `@deepseek-ai/dsh-experimental-auto-review`, because the `auto` preset only exists while that bundle is live.
 

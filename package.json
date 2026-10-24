@@ -1,0 +1,30 @@
+{
+  "name": "dsh-auto-preset",
+  "version": "0.1.0",
+  "description": "DSH plugin: remember your last manual permission-preset choice per session and restore it when the session is reopened.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "permission",
+    "auto-review"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
